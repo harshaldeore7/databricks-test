@@ -2,8 +2,10 @@
 node {
   def GITREPOREMOTE = "https://github.com/<user-name>/<repo-name>.git"
   def GITBRANCH     = "main"
-  def DBCLIPATH     = "C:\Users\uif52518\AppData\Local\Microsoft\WinGet\Packages\Databricks.DatabricksCLI_Microsoft.Winget.Source_8wekyb3d8bbwe\databricks.exe"
-  def JQPATH        = "C:\Users\uif52518\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe\jq.exe"
+  def DBCLIPATH     = "C:\\Users\\uif52518\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Databricks.DatabricksCLI_Microsoft.Winget.Source_8wekyb3d8bbwe\\databricks.exe"
+
+  def JQPATH        = "C:\\Users\\uif52518\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe\\jq.exe"
+
   def JOBPREFIX     = "jenkins-demo"
   def BUNDLETARGET  = "dev"
 
