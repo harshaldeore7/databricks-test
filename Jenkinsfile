@@ -1,6 +1,6 @@
 // Filename: Jenkinsfile
 node {
-  def GITREPOREMOTE = "https://github.com/<user-name>/<repo-name>.git"
+  def GITREPOREMOTE = "https://github.com/harshaldeore7/databricks-test.git"
   def GITBRANCH     = "main"
   def DBCLIPATH     = "C:\\Users\\uif52518\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Databricks.DatabricksCLI_Microsoft.Winget.Source_8wekyb3d8bbwe\\databricks.exe"
 
