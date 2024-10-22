@@ -2,11 +2,9 @@
 node {
   def GITREPOREMOTE = "https://github.com/harshaldeore7/databricks-test.git"
   def GITBRANCH     = "main"
-  def DBCLIPATH     = "C:\\Users\\uif52518\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Databricks.DatabricksCLI_Microsoft.Winget.Source_8wekyb3d8bbwe\\databricks.exe"
-
-  def JQPATH        = "C:\\Users\\uif52518\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe\\jq.exe"
-
-  def JOBPREFIX     = "jenkins-demo"
+  def DBCLIPATH     = "/usr/local/bin/databricks"
+  def JQPATH        = "/usr/bin/jq"
+  def JOBPREFIX     = "testing_job"
   def BUNDLETARGET  = "dev"
 
   stage('Checkout') {
