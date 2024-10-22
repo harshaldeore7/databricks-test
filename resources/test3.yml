@@ -25,7 +25,7 @@ resources:
           notebook_task:
             base_parameters:
               name: john
-            notebook_path: ${PWD}/src/notebook-1.py
+            notebook_path: "${PWD}/src/notebook-1.py"
             source: WORKSPACE
           email_notifications: {}
         - task_key: "2"
@@ -35,7 +35,7 @@ resources:
           notebook_task:
             base_parameters:
               name: rohan
-            notebook_path: ${PWD}/src/notebook-2.py
+            notebook_path: "${PWD}/src/notebook-2.py"
             source: WORKSPACE
           email_notifications: {}
           run_if: ALL_SUCCESS
