@@ -2,8 +2,8 @@
 node {
   def GITREPOREMOTE = "https://github.com/harshaldeore7/databricks-test.git"
   def GITBRANCH     = "main"
-  def DBCLIPATH     = "/usr/local/bin/databricks"
-  def JQPATH        = "/usr/bin/jq"
+  def DBCLIPATH     = "/usr/local/bin"
+  def JQPATH        = "/usr/bin"
   def JOBPREFIX     = "testing_job"
   def BUNDLETARGET  = "dev"
 
