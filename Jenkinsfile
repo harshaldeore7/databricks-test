@@ -12,8 +12,8 @@ node {
   }
   stage('Get Working Directory') {
   script {
-    WORKING_DIR = sh(script: 'pwd', returnStdout: true).trim()
-    echo "Working Directory is: ${WORKING_DIR}"
+    env.WORKING_DIR = sh(script: 'pwd', returnStdout: true).trim()  // Capture current working directory
+    echo "Working Directory is: ${env.WORKING_DIR}"
    }
   }
   stage('Validate Bundle') {
