@@ -12,7 +12,7 @@ node {
   }
   stage('Get Working Directory') {
   script {
-    WORKING_DIR = sh(script: "databricks workspace list --absolute", returnStdout: true).trim()
+    WORKING_DIR = sh(script: 'pwd', returnStdout: true).trim()
     echo "Working Directory is: ${WORKING_DIR}"
    }
   }
