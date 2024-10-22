@@ -10,9 +10,11 @@ node {
   stage('Checkout') {
     git branch: GITBRANCH, url: GITREPOREMOTE
   }
-  stage('print working directory') {
-    sh """pwd
-       """
+  stage('Get Working Directory') {
+  script {
+    WORKING_DIR = sh(script: "databricks workspace list --absolute", returnStdout: true).trim()
+    echo "Working Directory is: ${WORKING_DIR}"
+   }
   }
   stage('Validate Bundle') {
     sh """#!/bin/bash

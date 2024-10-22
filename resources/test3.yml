@@ -12,6 +12,7 @@ resources:
             node_type_id: Standard_D4ds_v5
             spark_env_vars:
               PYSPARK_PYTHON: /databricks/python3/bin/python3
+              WORKING_DIR: "${WORKING_DIR}"  # Dynamically populated from Jenkins or script
             runtime_engine: PHOTON
             num_workers: 1
             enable_elastic_disk: true
@@ -25,7 +26,7 @@ resources:
           notebook_task:
             base_parameters:
               name: john
-            notebook_path: "${pwd}/src/notebook-1.py"
+            notebook_path: "${WORKING_DIR}/src/notebook-1.py"
             source: WORKSPACE
           email_notifications: {}
         - task_key: "2"
@@ -35,7 +36,7 @@ resources:
           notebook_task:
             base_parameters:
               name: rohan
-            notebook_path: "${pwd}/src/notebook-2.py"
+            notebook_path: "${WORKING_DIR}/src/notebook-2.py"
             source: WORKSPACE
           email_notifications: {}
           run_if: ALL_SUCCESS
